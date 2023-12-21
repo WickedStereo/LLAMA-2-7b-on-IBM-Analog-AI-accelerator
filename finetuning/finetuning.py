@@ -11,16 +11,17 @@ from peft import LoraConfig, PeftModel
 from trl import SFTTrainer
 from torch.utils.data import DataLoader
 
-# Set the new cache directory
-os.environ["TRANSFORMERS_CACHE"] = "/scratch/am12553/hf_transformers_cache"
-os.environ["HF_HOME"] = "/scratch/am12553/hf_home"
-os.environ["HF_DATASETS_CACHE"] = "/scratch/am12553/hf_datasets"
+# Set your new cache directory
+os.environ["TRANSFORMERS_CACHE"] = "./hf_transformers_cache"
+os.environ["HF_HOME"] = "./hf_home"
+os.environ["HF_DATASETS_CACHE"] = "./hf_datasets"
 
-access_token = "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"
+# Enter your huggingface model access token
+access_token = "..."    
 model_name = "meta-llama/Llama-2-7b-chat-hf"
 #dataset_name = "mlabonne/guanaco-llama2-1k"
 dataset_name = "shawhin/imdb-truncated"
-new_model = "llama-finetuned2"
+new_model = "llama-finetuned"
 
 
 ################################################################################
@@ -57,7 +58,7 @@ use_nested_quant = False
 ################################################################################
 
 # Output directory where the model predictions and checkpoints will be stored
-output_dir = "./results"
+output_dir = "./models"
 
 # Number of training epochs
 num_train_epochs = 1
@@ -207,7 +208,7 @@ trainer.train()
 trainer.model.save_pretrained(new_model)
 
 
-# Reload model in FP16 and merge it with LoRA weights
+# Reload model and merge with finetuned LoRA weights
 base_model = AutoModelForCausalLM.from_pretrained(
     model_name,
     low_cpu_mem_usage=True,
