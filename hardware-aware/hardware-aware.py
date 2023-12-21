@@ -35,7 +35,7 @@ from aihwkit.optim import AnalogSGD
 
 # Pretrained LLAMA model from Hugging Face model hub
 MODEL_NAME = "meta-llama/Llama-2-7b-chat-hf"
-access_token = "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"
+access_token = "..."
 tokenizer = AutoTokenizer.from_pretrained(MODEL_NAME)
 
 # Training parameters
