@@ -1,0 +1,36 @@
+accelerate==0.21.0
+bitsandbytes==0.41.0
+cmake==3.27.9
+datasets==2.15.0
+evaluate==0.4.1
+hf_transfer==0.1.4
+huggingface-hub==0.19.4
+ipython==8.18.1
+matplotlib @ file:///croot/matplotlib-suite_1698692105134/work
+matplotlib-inline==0.1.6
+numpy @ file:///home/conda/feedstock_root/build_artifacts/numpy_1700874473373/work/dist/numpy-1.26.2-cp39-cp39-linux_x86_64.whl#sha256=e3c50f65f8bb973822c70baf0e6561ee0aee5b01a3c44246aaa7dfb9f339b29b
+orjson==3.9.10
+packaging==23.1
+pandas==2.1.4
+peft==0.4.0
+pip-api==0.0.30
+pipreqs==0.4.13
+prompt-toolkit==3.0.43
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+python-multipart==0.0.6
+requirementslib==3.0.0
+safetensors==0.3.3
+scikit-build @ file:///home/conda/feedstock_root/build_artifacts/scikit-build_1685579843875/work
+scipy==1.11.4
+semantic-version==2.10.0
+tensorboard @ file:///home/builder/mesters/opt/envs/tensorflow/conda-bld/tensorboard_1682445826165/work/tensorboard-2.12.1-py3-none-any.whl
+tensorboard-data-server @ file:///croot/tensorboard-data-server_1681498183723/work/tensorboard_data_server-0.7.0-py3-none-manylinux2014_x86_64.whl
+tensorboard-plugin-wit @ file:///home/builder/tkoch/workspace/tensorflow/tensorboard-plugin-wit_1658918494740/work/tensorboard_plugin_wit-1.8.1-py3-none-any.whl
+tokenizers==0.13.3
+torch==2.1.1
+torchaudio==2.1.1
+torchvision==0.16.1
+tqdm @ file:///croot/tqdm_1679561862951/work
+transformers==4.31.0
+trl==0.4.7
+
