@@ -34,11 +34,22 @@ README.md: Project overview (this file).
 
 ## Example Usage:
 
-Install dependencies:```bash pip install -r requirements.txt ```
+Install dependencies:
+```bash 
+pip install -r requirements.txt
+```
 
-Finetune the model: ```bash python finetuning/finetuning.py ```(Make necessary changes inside the script)
+Finetune the model: 
+```bash
+python finetuning/finetuning.py 
+```
+(Make necessary changes inside the script)
 
-Experiment with hardware-aware training: ```bash python hardware_aware/hardware_aware.py ``` (Make necessary changes inside the script)
+Experiment with hardware-aware training: 
+```bash 
+python hardware_aware/hardware_aware.py
+```
+(Make necessary changes inside the script)
 
 ## References:
 
